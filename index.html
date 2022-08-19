@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>CSS Exam</title>
+            <style>
+				.outerbox{
+					display: flex; 
+                    justify-content: center;
+					align-items: center;
+                    border: 2px solid green;
+                    height: 500px;
+				}
+				
+				.flex-container{
+					display: flex;
+                    gap: 40px;
+					justify-content: center;
+					align-items: center;
+                    border: 2px dashed purple;
+                    width: 500px;
+				}
+				
+				.flex-container > div{
+					/*background-color: pink;
+                     border: 1px solid red;*/
+					color: blue;
+					font-size: 30px;
+				}
+                
+                .space{
+                	display: inline;
+                }
+                
+                .boxdesign{
+                	background-color: pink;
+                    border: 1px solid red;
+                    padding: 30px;
+					margin: 20px;
+                }
+                
+            </style>
+        </head>
+        <body>
+            <main>
+				<span class="outerbox">
+					<div class="flex-container">
+                       <div class="space">
+                         <div class="boxdesign">Seat 1</div>
+                         <div class="boxdesign">Seat 3</div>
+                       </div>
+                       <div class="space">
+                         <div class="boxdesign">Seat 2</div>
+                         <div class="boxdesign">Seat 4</div>
+                       </div>
+					</div>
+				</span>
+            </main>
+        </body>
+</html> 
